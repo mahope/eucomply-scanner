@@ -1,0 +1,25 @@
+
+🔍 EUComply Scan Report
+   URL:      https://wordpress.org/
+   Platform: WordPress 7.2-alpha-63343
+   Duration: 877ms
+   Score:    2/9 (22%)
+
+ ❌ No Google Consent Mode v2 detected
+    No Consent Mode v2 signals found. Since March 2024, Google requires Consent Mode v2 for ad personalization in the EEA. Without it, Google Ads conversion tracking may be restricted.
+
+ ❌ No IAB TCF detected
+    No IAB Transparency & Consent Framework signals found. TCF is used by ad-tech platforms and publishers for GDPR consent management in programmatic advertising.
+
+ ❌ 1 tracker(s) with NO consent platform
+    Trackers found in page markup: Google Analytics / GTM. No consent management platform was found — these trackers likely fire before consent.
+
+ ✅ HTTPS + HSTS OK
+    HSTS: max-age=3600
+
+ ⚠️ No consent banner detected
+    No known cookie-consent platform found in the HTML. If you set any non-essential cookies, EU ePrivacy rules require prior consent.
+
+ ✅ Form(s) found, no consent link
+    Form markup found, but no privacy-policy link detected in page HTML. EU law requires a privacy notice at the point of data collection.
+

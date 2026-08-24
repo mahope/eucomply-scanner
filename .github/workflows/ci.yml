@@ -1,0 +1,26 @@
+name: CI
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Smoke test — scan a real site
+        run: |
+          chmod +x cli/eucomply.js
+          node cli/eucomply.js --json https://example.com | tee /tmp/report.json
+          node -e "
+            const r = require('/tmp/report.json');
+            if (!r.score || typeof r.score.pct !== 'number') { console.error('bad report'); process.exit(1); }
+            if (!r.checks || Object.keys(r.checks).length < 5) { console.error('too few checks'); process.exit(1); }
+            console.log('OK — score', r.score.pct + '%,', Object.keys(r.checks).length, 'checks');
+          "
+      - name: Pack check (npm publish dry run)
+        run: npm pack --dry-run
