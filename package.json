@@ -1,0 +1,39 @@
+{
+  "name": "eucomply-scanner",
+  "version": "1.0.0",
+  "description": "Universal website compliance scanner — GDPR, DSA, ePrivacy, cookie consent, security headers. Platform-independent: works on any URL, any CMS.",
+  "type": "module",
+  "main": "engine/index.js",
+  "bin": {
+    "eucomply-scanner": "cli/eucomply.js"
+  },
+  "files": [
+    "engine/",
+    "cli/",
+    "examples/",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "gdpr",
+    "compliance",
+    "dsa",
+    "cookie-consent",
+    "security-headers",
+    "website-scanner",
+    "privacy",
+    "e-privacy",
+    "dora",
+    "consent-mode",
+    "tcf"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mahope/eucomply-scanner.git"
+  },
+  "homepage": "https://github.com/mahope/eucomply-scanner",
+  "engines": {
+    "node": ">=18"
+  }
+}
