@@ -254,7 +254,7 @@ export function normalizeUrl(raw) {
   } catch { return null; }
 }
 
-const UA = "Mozilla/5.0 (compatible; EUComplyScanner/1.0; +https://auditedwp.pages.dev/scan)";
+const UA = "Mozilla/5.0 (compatible; EUComplyScanner/1.0; +https://eucomplypro.com/scan)";
 
 export async function runScan(url) {
   const rawUrl = url;
