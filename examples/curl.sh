@@ -3,7 +3,7 @@
 # Requires: curl
 
 URL="${1:-https://example.com}"
-API="https://eucomply-scan.mahope.workers.dev"
+API="https://eucomply-scan.mahope-eeb.workers.dev"
 
 echo "🔍 Scanning: $URL"
 echo ""

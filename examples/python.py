@@ -7,7 +7,7 @@ import json
 import sys
 
 def scan(url):
-    api_base = "https://eucomply-scan.mahope.workers.dev"
+    api_base = "https://eucomply-scan.mahope-eeb.workers.dev"
     params = urllib.parse.urlencode({"url": url})
     req = urllib.request.Request(f"{api_base}/scan?{params}")
     

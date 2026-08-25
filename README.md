@@ -117,8 +117,8 @@ Validates and normalizes a URL string. Returns `null` for private/internal/local
 A public REST API is available at:
 
 ```
-GET https://eucomply-scan.mahope.workers.dev/scan?url=https://example.com
-GET https://eucomply-scan.mahope.workers.dev/stats
+GET https://eucomply-scan.mahope-eeb.workers.dev/scan?url=https://example.com
+GET https://eucomply-scan.mahope-eeb.workers.dev/stats
 ```
 
 CORS-enabled for browser use. Rate-limited to 10 requests/minute/IP.
@@ -131,7 +131,7 @@ Need more? The Pro version adds:
 - **Multi-page scans** — scan entire sites, not just one URL
 - **Priority support** — compliance expert assistance
 
-**[EUComply Pro — $79/year](https://auditedwp.pages.dev/scan/)**
+**[EUComply Pro — $79/year](https://eucomplypro.com/pro/)**
 
 ## License
 
