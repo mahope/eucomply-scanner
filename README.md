@@ -17,6 +17,9 @@ Most compliance scanners are tied to WordPress or require installing a plugin on
 - CI/CD pipeline compliance gates
 - GDPR/DSA/ePrivacy audit preparation
 
+> **Professional monitoring?** Get automated weekly re-scans, PDF auditor-ready reports, DPA documents, and multi-page site audits for $79/year.
+> [EUComply Pro →](https://eucomplypro.com/pro/)
+
 ## Quick start
 
 ### Via npx (no install)
