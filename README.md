@@ -131,7 +131,7 @@ Need more? The Pro version adds:
 - **Multi-page scans** — scan entire sites, not just one URL
 - **Priority support** — compliance expert assistance
 
-**[EUComply Pro — $79/year](https://eucomplypro.com/pro/)**
+**[EUComply Pro — $79/year](https://auditedwp.pages.dev/pro/)**
 
 ## License
 
