@@ -30,6 +30,8 @@
 
 // CLI entry point — run directly with `node engine/index.js https://example.com`
 // or via the `eucomply-scanner` CLI wrapper
+import { pathToFileURL } from 'node:url';
+
 async function main() {
   const args = process.argv.slice(2);
   const url = args.find(a => !a.startsWith('--'));
@@ -79,18 +81,6 @@ EXAMPLES:
     console.error('❌ Error:', e.message);
     process.exit(1);
   }
-}
-
-// Automatically detect CLI invocation
-if (process.argv[1] && (
-  process.argv[1].endsWith('/eucomply-scanner') ||
-  process.argv[1].endsWith('\\eucomply-scanner') ||
-  process.argv[1].endsWith('/eucomply') ||
-  process.argv[1].endsWith('\\eucomply') ||
-  process.argv[1].endsWith('/index.js') ||
-  process.argv[1].endsWith('\\index.js')
-)) {
-  main();
 }
 
 const IAB_TCF_SIGNATURES = [
@@ -512,3 +502,10 @@ export async function runScan(url) {
     disclaimer: "Automated technical checks only — not legal advice. Full compliance review requires a qualified professional.",
   };
 }
+// Automatically detect CLI invocation — only when THIS file is the direct entry point.
+// (Name-based matching breaks when npm's .bin shim is named "eucomply-scanner": the engine
+// then runs main() during import, before `const UA` is initialized -> TDZ crash. Verified 25/8.)
+try {
+  const entry = process.argv[1] ? pathToFileURL(process.argv[1]).href : null;
+  if (entry && import.meta.url === entry) main();
+} catch { /* non-file context — never auto-run */ }
