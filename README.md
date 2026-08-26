@@ -18,7 +18,7 @@ Most compliance scanners are tied to WordPress or require installing a plugin on
 - GDPR/DSA/ePrivacy audit preparation
 
 > **Professional monitoring?** Get automated weekly re-scans, PDF auditor-ready reports, DPA documents, and multi-page site audits for $79/year.
-> [EUComply Pro →](https://eucomplypro.com/pro/)
+> [EUComply Pro →](https://auditedwp.pages.dev/pro/)
 
 ## Quick start
 
@@ -133,7 +133,7 @@ Need more? The Pro version adds:
 - **Multi-page scans** — scan entire sites, not just one URL
 - **Priority support** — compliance expert assistance
 
-**[EUComply Pro — $79/year](https://eucomplypro.com/pro/)**
+**[EUComply Pro — $79/year](https://auditedwp.pages.dev/pro/)**
 
 ## License
 
