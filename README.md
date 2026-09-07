@@ -139,6 +139,11 @@ Need more? The Pro version adds:
 
 A free browser version of the scan runs at https://eucomplypro.com/scan/.
 
+## Releasing
+
+`npm run release -- patch` (or `minor`/`major`) bumps the version, commits and pushes the tag.
+CI publishes to npm and creates the GitHub release.
+
 ## License
 
 MIT — use it freely in your projects, CI/CD pipelines, and tools.

@@ -39,5 +39,8 @@
   "publishConfig": {
     "access": "public"
   },
-  "bugs": "https://github.com/mahope/eucomply-scanner/issues"
+  "bugs": "https://github.com/mahope/eucomply-scanner/issues",
+  "scripts": {
+    "release": "node scripts/release.mjs"
+  }
 }
