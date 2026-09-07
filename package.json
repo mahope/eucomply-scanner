@@ -1,6 +1,6 @@
 {
-  "name": "eucomply-scanner",
-  "version": "1.0.0",
+  "name": "@mahope/eucomply-scanner",
+  "version": "1.0.1",
   "description": "Universal website compliance scanner — GDPR, DSA, ePrivacy, cookie consent, security headers. Platform-independent: works on any URL, any CMS.",
   "type": "module",
   "main": "engine/index.js",
@@ -35,5 +35,9 @@
   "homepage": "https://github.com/mahope/eucomply-scanner",
   "engines": {
     "node": ">=18"
-  }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "bugs": "https://github.com/mahope/eucomply-scanner/issues"
 }

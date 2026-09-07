@@ -16,7 +16,7 @@ const jsonOutput = args.includes('--json');
 
 if (!url || args.includes('--help') || args.includes('-h')) {
   console.log(`
-EUComply Scanner v1.0.0 — Universal website compliance checker
+EUComply Scanner v1.0.1 — Universal website compliance checker
 
 USAGE:
   eucomply-scanner [options] <url>
@@ -36,7 +36,7 @@ REPORT:
   security headers, and resilience compliance signals.
   Platform-independent — works on any CMS.
 `);
-  process.exit(url ? 0 : 1);
+  process.exit(args.includes('--help') || args.includes('-h') ? 0 : 1);
 }
 
 const timeout = (() => {
