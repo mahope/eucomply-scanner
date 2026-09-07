@@ -18,7 +18,7 @@ Most compliance scanners are tied to WordPress or require installing a plugin on
 - GDPR/DSA/ePrivacy audit preparation
 
 > **Professional monitoring?** Get automated weekly re-scans, PDF auditor-ready reports, DPA documents, and multi-page site audits for $79/year.
-> [EUComply Pro →](https://github.com/mahope/eucomply-scanner)
+> [EUComply Pro](https://eucomplypro.com/)
 
 ## Quick start
 
@@ -30,14 +30,16 @@ npx @mahope/eucomply-scanner https://example.com
 
 ### Install globally
 
-An npm registry release is planned (pending publish access). Until then, the
-`npx @mahope/eucomply-scanner <url>` command above always runs the latest version.
+```bash
+npm install -g @mahope/eucomply-scanner
+eucomply-scanner https://example.com
+```
 
 
 ### As a library
 
 ```js
-import { runScan } from 'eucomply-scanner';
+import { runScan } from '@mahope/eucomply-scanner';
 
 const report = await runScan('https://example.com');
 console.log(`Score: ${report.score.pct}%`);
@@ -133,8 +135,14 @@ Need more? The Pro version adds:
 - **Multi-page scans** — scan entire sites, not just one URL
 - **Priority support** — compliance expert assistance
 
-**[EUComply Pro — $79/year](https://github.com/mahope/eucomply-scanner)**
+**[EUComply Pro — $79/year](https://eucomplypro.com/)**
+
+A free browser version of the scan runs at https://eucomplypro.com/scan/.
 
 ## License
 
 MIT — use it freely in your projects, CI/CD pipelines, and tools.
+
+## Author
+
+Built by Mads Holst Jensen — developer and technical partner for small businesses, Odense, Denmark. https://mahoje.dk
