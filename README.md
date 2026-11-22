@@ -1,5 +1,8 @@
 # EUComply Scanner
 
+> **Frozen as of 2026-11-22.** EUComply Scanner is free open source under the MIT
+> licence. It is not actively maintained, and no paid versions are sold.
+
 > **Universal website compliance scanner** — GDPR, DSA, ePrivacy, cookie consent, security headers, and resilience checks. Platform-independent: works on **any URL, any CMS**.
 
 ```bash
@@ -16,9 +19,6 @@ Most compliance scanners are tied to WordPress or require installing a plugin on
 - Monitoring competitor compliance
 - CI/CD pipeline compliance gates
 - GDPR/DSA/ePrivacy audit preparation
-
-> **Professional monitoring?** Get automated weekly re-scans, PDF auditor-ready reports, DPA documents, and multi-page site audits for $79/year.
-> [EUComply Pro](https://eucomplypro.com/)
 
 ## Quick start
 
@@ -127,17 +127,11 @@ GET https://eucomply-scan.mahope-eeb.workers.dev/stats
 
 CORS-enabled for browser use. Rate-limited to 10 requests/minute/IP.
 
-## Pro version
-
-Need more? The Pro version adds:
-- **PDF reports** — downloadable compliance reports
-- **Continuous monitoring** — weekly automated rescans
-- **Multi-page scans** — scan entire sites, not just one URL
-- **Priority support** — compliance expert assistance
-
-**[EUComply Pro — $79/year](https://eucomplypro.com/)**
+## Free browser version
 
 A free browser version of the scan runs at https://eucomplypro.com/scan/.
+The Pro version (PDF reports, weekly rescans, multi-page scans) is no longer
+sold; licences that already exist keep working.
 
 ## Releasing
 

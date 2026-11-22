@@ -1,5 +1,9 @@
 # STATUS — 25. august 2026 — Iteration 300
 
+> **Historisk øjebliksbillede.** Projektet blev frosset som gratis open source
+> 22. november 2026; Pro sælges ikke længere, så købsrejsen og checkout-planen
+> nedenfor er ikke længere gældende.
+
 ## Revenue & traction (ærlige tal)
 
 - **Revenue: $0.** Rigtige tilmeldinger: 0.
